@@ -26,7 +26,7 @@ $content = '
           <div class="card-body">
              <h5 class="card-title">Newsletter</h5>
              <p class="card-text">Here ypu can create newsletter. And send it automaticly.</p>
-             <a href="newsletter/newsletter.php" class="btn btn-primary">Start manage</a>
+             <a href="newsletter/" class="btn btn-primary">Start manage</a>
           </div>
         </div>
     </div>
@@ -84,4 +84,4 @@ $content = '
 
 
 include("pages/template.php");
-echo makePage($content, '.');
+echo makePage('Admin', $content, '.');
