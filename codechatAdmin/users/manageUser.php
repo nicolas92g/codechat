@@ -86,6 +86,7 @@ $content = "
             <div class='col-auto'><button class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#banAccount'>ban account</button></div>
             <div class='col-auto'><button class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#deleteAccount'>delete account</button></div>
             <div class='col-auto'><button class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#printAccount'>Download</button></div>
+            <div class='col-auto'><button class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#goBack'>Go Back</button></div>
         </div>
     </div>
     
@@ -143,6 +144,23 @@ $content = "
       </div>
     </div>
     
+    <!-- go back -->
+    <div class='modal' id='printAccount'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <h5 class='modal-title'> download $pseudo information ?</h5>
+            <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+          </div>
+            <p class='modal-body'>By clicking on download you will download all the information concerning $pseudo.</p>
+          <div class='modal-footer'>
+            <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Cancel</button>
+            <button type='button' class='btn btn-primary' onclick='location.href=\".\"'>Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 ";
 
-echo makePage($content, "..");
+echo makePage('manage '.htmlspecialchars($_GET['user']) ,$content, "..");

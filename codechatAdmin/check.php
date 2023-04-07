@@ -1,7 +1,6 @@
  <?php
  include("pages/utils.php");
  checkNotSessionElseMainPage();
-
  include('../database.php');
 $db = getDatabase();
 

@@ -84,4 +84,4 @@ $content = '
 
 
 include("pages/template.php");
-echo makePage('Admin', $content, '.');
+echo makePage('Admin', $content, '/');
