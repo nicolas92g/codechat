@@ -37,10 +37,6 @@ include('src/template.php');
 </main>
 
 
-
-</main>
-
-
         <!--    END OF MAIN    -->
         <?= make_footer()?>
     </body>
